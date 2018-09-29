@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.jt3282.lifego.MainActivity"
+    tools:context="com.example.jt3282.lifego.com.lifegofood.jt3282.lifego.GMActivity"
     android:weightSum="1">
 
     <ScrollView
@@ -25,10 +25,10 @@
                 android:background="@color/colorGray"
                 android:textSize="20dp" />
 
-            <com.example.jt3282.lifego.MyListView
+            <com.lifegofood.jt3282.lifego.food.MyListView
                 android:id="@+id/lv1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></com.example.jt3282.lifego.MyListView>
+                android:layout_height="wrap_content"></com.lifegofood.jt3282.lifego.food.MyListView>
 
             <TextView
                 android:text="沒有更多了"
@@ -44,10 +44,10 @@
                 android:text="休息中"
                 android:textSize="20dp" />
 
-            <com.example.jt3282.lifego.MyListView
+            <com.lifegofood.jt3282.lifego.food.MyListView
                 android:id="@+id/lv2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></com.example.jt3282.lifego.MyListView>
+                android:layout_height="wrap_content"></com.lifegofood.jt3282.lifego.food.MyListView>
 
             <TextView
                 android:text="沒有更多了"

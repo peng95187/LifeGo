@@ -1,49 +1,494 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jt3282.lifego">
+    package="com.lifegofood.jt3282.lifego">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".MainPages"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".food.GMActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
              Note that the API key is linked to the encryption key used to sign the APK.
              You need a different API key for each encryption key, including the release key that is used to
              sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCfRs3XDZOVuiwYT9d1qpUEPQ8rz4I1_iE" />
 
         <activity
-            android:name=".MapsStore"
-            android:screenOrientation="portrait">
-            android:label="@string/title_activity_maps_store">
+            android:name=".food.MapsStore"
+            android:label="@string/title_activity_maps_store"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".food.FrameActivity"
+            android:label="@string/title_activity_frame"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".food.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".food.login.LogoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.edit.EditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".food.edit.UILViewPagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.essay.EssayFrame"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".food.userpage.UserInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.userpage.EssayOwn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.essay.EssayByClass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.essay.Search"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_id" />
+
+        <activity
+            android:name=".food.fab.Voice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".food.essay.ViewImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.fab.SelectFunction"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".food.fab.FloatWindowService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".food.fab.EssayVoice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".food.fab.First"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.fab.Forth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.fab.NearlyFood"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".food.fab.Third"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.login.ChangePsw"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.userpage.FanFollowList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.Report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".food.CheckCommand"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FourChoose"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".weather.WeatherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".weather.WeatherVoice"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".weather.WeatherSelectCity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".weather.WeatherFloatWindowService" />
+
+        <activity android:name="com.example.user.newweather.WeatherManually" />
+
+        <service android:name=".weather.InstanceWeatherService" />
+        <service
+            android:name=".weather.WeatherService"
+            android:exported="false"
+            android:process=":weather" />
+        <service
+            android:name=".weather.WeatherGuardService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":guard" />
+        <service
+            android:name=".weather.WeatherClearService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".weather.Reciver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".weather.WeatherBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.example.jt3282.weather.destroy" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <!--Weather Plus-->
+        <activity android:name=".weather.newweather.SelectCity"></activity>
+        <activity android:name=".weather.newweather.WeatherManually"></activity>
+        <activity android:name=".weather.cityname.Changhua"></activity>
+        <activity android:name=".weather.cityname.Chiayi"></activity>
+        <activity android:name=".weather.cityname.Chiayi_city"></activity>
+        <activity android:name=".weather.cityname.Hsinchu"></activity>
+        <activity android:name=".weather.cityname.Hsinchu_city"></activity>
+        <activity android:name=".weather.cityname.Hualien"></activity>
+        <activity android:name=".weather.cityname.Jinmen"></activity>
+        <activity android:name=".weather.cityname.Kaohsiung"></activity>
+        <activity android:name=".weather.cityname.Keelung"></activity>
+        <activity android:name=".weather.cityname.Lianjiang"></activity>
+        <activity android:name=".weather.cityname.Miaoli"></activity>
+        <activity android:name=".weather.cityname.Nantou"></activity>
+        <activity android:name=".weather.cityname.Penghu"></activity>
+        <activity android:name=".weather.cityname.Pingtung"></activity>
+        <activity android:name=".weather.cityname.Taichung"></activity>
+        <activity android:name=".weather.cityname.Tainan"></activity>
+        <activity android:name=".weather.cityname.Taipei"></activity>
+        <activity android:name=".weather.cityname.Taipei_new"></activity>
+        <activity android:name=".weather.cityname.Taitung"></activity>
+        <activity android:name=".weather.cityname.Taoyuan"></activity>
+        <activity android:name=".weather.cityname.Yilan"></activity>
+        <activity android:name=".weather.cityname.Yunlin"></activity>
+
+
+
+        <!-- Traffic -->
+
+        <activity
+            android:name=".weather.WeatherInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.bus.BusRoute"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.bus.RouteList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.bus.RouteDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.TrafficChoose"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.Railway"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.RWDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.TRASelectSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.Timeboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.TBlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.NorthSouth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.TRAPrice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.TRAPriceSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.TrainSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.TrainSearchDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.TRAQsearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.railway.TRAQsearch_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRSelectSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRPrice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRPriceSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRSearchDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRQSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRQSearchDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRStation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRStationSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.hsr.HSRNews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.bus.BusSelectSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.bus.CountySelect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.bus.BusStop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.bus.StopDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusSelect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusPrice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusPrice_Result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusPrice_Detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusSearch_sub"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusSearch_Detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusStop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusStop_Result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBusStop_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.transfer.Transfer_Select"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.transfer.Tftratohsr_direction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.transfer.Tftratoshr_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.transfer.Tfhsrtotra_direction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.transfer.Tfhsrtotra_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.transfer.Tftratotra_direction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.transfer.Tftratotra_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.transfer.Tftratotra_detail2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.minelike.MineLike_select"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.minelike.Like_stop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.minelike.Like_route"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".traffic.TrafficGuardService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":traffic" />
+        <service
+            android:name=".traffic.HSRService"
+            android:exported="false"
+            android:process=":hsr" />
+        <service
+            android:name=".traffic.TRAService"
+            android:exported="false"
+            android:process=":tra" />
+        <service
+            android:name=".traffic.BusService"
+            android:exported="false"
+            android:process=":bus" />
+
+        <activity
+            android:name=".traffic.notify.Notification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.notify.Notification_add"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.voice.TrafficVoice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+
+        <service android:name=".traffic.voice.TrafficFloatWindowService" />
+
+        <activity
+            android:name=".traffic.bus.Bus_stoptostop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.bus.Bus_sts_result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBus_stoptostop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".traffic.ibus.IBus_sts_result"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".traffic.TrafficBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.example.jt3282.bus.destroy" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".traffic.voice.TrafficVoice_showCommand"
+            android:screenOrientation="portrait" />
+        <activity android:name=".weather.WeatherVoice_show" />
+
+        <!-- DM -->
+
+        <activity
+            android:name=".dm.Movie_Detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.KoreanDrama_Hot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.KRDrama_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.Movie_Hot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.Drama_Hot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.DMChoose"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.Drama_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.Anime_Hot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.Anime_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.DramaSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.DMCmt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.Anime_Search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.DMRate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.DMVoice"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".dm.DMFloatWindowService" />
+
+        <activity
+            android:name=".dm.DMCast"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dm.DMVoiceShow"
+            android:screenOrientation="portrait" />
+        <activity android:name=".traffic.routedirect.RouteDirection_result"></activity>
+
+
+        <activity android:name=".traffic.routedirect.RouteDirection">
+        </activity>
+        <activity android:name=".traffic.routedirect.RouteDirection_detail"></activity>
     </application>
 
 </manifest>

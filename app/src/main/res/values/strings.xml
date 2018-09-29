@@ -1,4 +1,27 @@
 <resources>
     <string name="app_name">LifeGo</string>
     <string name="title_activity_maps_store">Map</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="title_activity_frame">FrameActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="buttonLabel">DELETE</string>
+    <string name="title">刪除這張圖片</string>
+    <string name="okLabel">確定</string>
+    <string name="okMessage">圖片已删除</string>
+    <string name="cancelLabel">取消</string>
+    <string name="facebook_id">142727216376599</string>
+    <string-array name="suggest_visit">
+        <item>6 - 9點</item>
+        <item>9 - 12點</item>
+        <item>12 - 15點</item>
+        <item>15 - 18點</item>
+        <item>18 - 21點</item>
+        <item>21 - 24點</item>
+        <item>0 - 3點</item>
+        <item>3 - 6點</item>
+    </string-array>
 </resources>

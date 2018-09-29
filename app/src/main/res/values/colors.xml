@@ -5,5 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorGray">#DDDDDD</color>
     <color name="colorBlack">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="coral">#FF7F50</color>
+    <color name="steelblue">#6495ed</color>
 
 </resources>

@@ -39,7 +39,7 @@
                     android:name="com.google.android.gms.maps.SupportMapFragment"
                     android:layout_width="match_parent"
                     android:layout_height="350dp"
-                    tools:context="com.example.jt3282.lifego.MapsStore" />
+                    tools:context="com.example.jt3282.lifego.com.lifegofood.jt3282.lifego.MapsStore" />
 
             </RelativeLayout>
 

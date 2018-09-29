@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/all"
+                android:text="全部"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/light_food"
+                android:text="輕食"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/snack"
+                android:text="小吃"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/pot_food"
+                android:text="鍋類"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bandb"
+                android:text="早午餐"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/afternoon_tea"
+                android:text="下午茶點心"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/exquisite"
+                android:text="精緻"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/noodle"
+                android:text="麵食"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/roast"
+                android:text="燒烤"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/japan"
+                android:text="日式"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/thai"
+                android:text="泰式"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/honkong"
+                android:text="港式"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/feafood"
+                android:text="海鮮"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/fried"
+                android:text="熱炒"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/drink"
+                android:text="冰/飲品"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/other"
+                android:text="其他"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/google"
+        android:background="@drawable/googlemap"
+        android:text="Google Map"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <ImageButton
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="7dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/nearly"
+        android:background="@drawable/rest"
+        android:text="附近"
+        android:layout_width="85dp"
+        android:layout_height="75dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:elevation="0dp"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="1dp"
+        app:backgroundTint="@color/red"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_menu_edit_24dp_white"
+        android:layout_gravity="bottom|end" />
+
+</android.support.design.widget.CoordinatorLayout>
