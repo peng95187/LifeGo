@@ -295,7 +295,7 @@ Google Directions API (現有最完整的資料)
 採納結果
 
 監聽 RecyclerView 的 Scroll State 還有 減少顯示筆數(原先20筆，改為10筆)
-isScrolling狀態沒有太大效果，故不採用
+isScrolling狀態沒有太大效果，故不採用為方法
 
 
 
