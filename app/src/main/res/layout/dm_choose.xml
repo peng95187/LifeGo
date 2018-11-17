@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dm_bgmain">
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:weightSum="6"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:background="@drawable/dm_moviebg"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="電影"
+            android:textSize="18dp"
+            android:id="@+id/mv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:background="@drawable/a1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="韓劇"
+            android:textSize="18dp"
+            android:id="@+id/kr"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:background="@drawable/dm_jpdramabg"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="日劇"
+            android:textSize="18dp"
+            android:id="@+id/jp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:background="@drawable/dm_animebg"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="動畫"
+            android:textSize="18dp"
+            android:id="@+id/anime"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:background="@drawable/dm_voicebg"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="語音"
+            android:textSize="18dp"
+            android:id="@+id/voice"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/voice_show"
+                android:textSize="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="語音提示"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

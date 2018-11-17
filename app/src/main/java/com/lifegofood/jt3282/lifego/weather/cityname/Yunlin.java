@@ -315,7 +315,7 @@ public class Yunlin extends Activity implements View.OnClickListener {
                 break;
         }
     }
-    //key back
+    //key back//
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if(keyCode == KeyEvent.KEYCODE_BACK){

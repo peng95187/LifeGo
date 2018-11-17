@@ -154,7 +154,7 @@
 
         <service android:name=".weather.WeatherFloatWindowService" />
 
-        <activity android:name="com.example.user.newweather.WeatherManually" />
+        <activity android:name=".weather.newweather.WeatherManually" />
 
         <service android:name=".weather.InstanceWeatherService" />
         <service

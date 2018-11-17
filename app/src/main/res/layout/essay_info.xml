@@ -409,7 +409,7 @@
         app:borderWidth="0dp"
         app:elevation="0dp"
         app:fabSize="mini"
-        app:layout_behavior="com.lifegofood.jt3282.lifego.ScrollAwareFABBehavior"
+        app:layout_behavior="com.lifegofood.jt3282.lifego.food.ScrollAwareFABBehavior"
         app:pressedTranslationZ="1dp" />
 
 </android.support.design.widget.CoordinatorLayout>

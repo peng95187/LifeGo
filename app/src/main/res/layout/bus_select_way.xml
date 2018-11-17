@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/paper1"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/routes"
+            android:text="搜尋路線"
+            android:height="60dp"
+            android:textSize="18dp"
+            android:background="@drawable/button_coral"
+            android:backgroundTint="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/stops"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="搜尋站牌"
+            android:textSize="18dp"
+            android:background="@drawable/button_coral"
+            android:backgroundTint="#ffffff"
+            android:height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="站到站搜尋"
+            android:height="60dp"
+            android:textSize="18dp"
+            android:backgroundTint="#ffffff"
+            android:background="@drawable/button_coral"
+            android:id="@+id/stoptostop"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

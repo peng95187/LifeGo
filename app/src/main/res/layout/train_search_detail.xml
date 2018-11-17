@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gray_bg"
+    android:id="@+id/lltsd">
+
+    <LinearLayout
+        android:id="@+id/ll_123"
+        android:background="@drawable/yellow_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/trainNo"
+            android:text="車次"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/trainType"
+            android:text="車種"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/startStation"
+            android:layout_marginTop="5dp"
+            android:text="起點"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/endStation"
+            android:text="終點"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/direction"
+            android:layout_marginTop="5dp"
+            android:text="上/下行"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tripline"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="山/海線"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/llopen"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/wheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="是否提供輪椅服務"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/packages"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="是否提供行李服務"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/bike"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="是否可攜帶自行車"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/breastfeeding"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="是否設有哺乳室"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/note"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="附註"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlbopen"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <ImageButton
+                android:id="@+id/imbopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:drawable/arrow_down_float" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@drawable/blue_bg"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="車站名稱"
+                android:gravity="center_horizontal"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="離站時間"
+                android:gravity="center_horizontal"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tsd_rv"
+        android:layout_below="@id/ll_123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageButton
+        android:id="@+id/imbtn"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_star_big_off" />
+
+</RelativeLayout>

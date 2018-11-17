@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/title_city_manager"
+            android:layout_height="45.0dp"
+            android:layout_width="45.0dp"
+            android:src="@drawable/title_city_manager">
+        </ImageView>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_height="45.0dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/title_city_manager"
+            android:gravity="center_vertical"
+            android:text="簡易天氣查詢"
+            android:textSize="20.0sp"
+            android:textColor="#FFFFFF">
+        </TextView>
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:id="@+id/title_city_locate"
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/title_city_update"
+            android:src="@drawable/title_city_locate">
+        </ImageView>
+
+        <ImageView
+            android:layout_marginRight="7dp"
+            android:id="@+id/title_city_update"
+            android:layout_height="40.0dp"
+            android:layout_width="40.0dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/title_city_share"
+            android:src="@drawable/title_city_update">
+        </ImageView>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/title_city_share"
+            android:layout_width="30.0dp"
+            android:layout_height="30.0dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:drawable/ic_dialog_info"></ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/today_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sun_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|center_vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="所在縣市"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/title_city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="縣市"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(時段)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15.0sp"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="溫度"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:id="@+id/rainfall"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="降雨機率"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天候狀況"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20.0sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/today_relative_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sun_bg">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|center_vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:text="選取縣市"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/title_city_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/time_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15.0sp"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/temperature_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="點我選取"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rainfall_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/status_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20.0sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
